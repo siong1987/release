@@ -1,0 +1,21 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-default">
+    Release
+  </button>
+</div>
+
+<br />
+<br />
+
+<ul class="list-group">
+  <% @releases.each do |release| %>
+    <li class="list-group-item">
+      <h2><%= release.name %></h2>
+      Tag Name: <%= release.tag_name %>
+      <br />
+      Author: <%= release.author.login %>
+      <br />
+      Published At: <%= release.published_at %>
+    </li>
+  <% end %>
+</ul>

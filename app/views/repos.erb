@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <% @repos.each do |repo| %>
+    <a href="repos/<%= repo.name %>" class="list-group-item">
+      <%= repo.name %>
+    </a>
+  <% end %>
+</ul>
